@@ -76,8 +76,8 @@ h4 {
         background-size: cover;
         padding: 3.75rem;
         text-align: center;
-        width: 1920px;
-        min-height: 900px;
+        width: 100%;
+        min-height: 100%;
         
     }
         .menu {
@@ -179,8 +179,8 @@ h4 {
         flex-flow: row nowrap;
         padding: 1.25rem; 
         justify-content: center;
-        width: 1920px;
-        height: auto;
+        width: 100%;
+        min-height: 100%;
     }
         .quienes-somos-img {
             min-width: 650px;
@@ -238,8 +238,8 @@ h4 {
        /* background: #f4f6ff;*/
         display: flex;
         flex-flow: row wrap;
-        width: 1920px;
-        height: auto;
+        width: 100%;
+        min-height: 100%;
         justify-content: center;
         align-content: center;
         
@@ -315,8 +315,8 @@ h4 {
         display:flex;
         flex-flow: row wrap;
         justify-content: center;
-        width: 1920px;
-        height: auto;
+        width: 100%;
+        min-height: 100%;
        
        
     }
@@ -403,8 +403,8 @@ h4 {
         align-items:center;
         padding-right: 2rem;
         padding-left:2rem;
-        width: 1920px;
-        height: auto;
+        width: 100%;
+        min-height: auto;
        
     }
         .rrss {
@@ -502,7 +502,7 @@ h4 {
     .quienes-somos-caja {
         flex-flow: column wrap;
         display: 100%;
-        
+
     }
     .text {
         display:50%;
