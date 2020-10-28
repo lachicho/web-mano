@@ -27,20 +27,20 @@ p {
 h1 {
     font-family:'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 7vw;
+    font-size: 5.5vw;
     
 }
 
 h2 {
     font-family:'Raleway', sans-serif;
-    font-size: 1.7vw;
+    font-size: 1.2vw;
     font-weight: 400;  
     text-transform: uppercase; 
     color:  #07031a; 
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family:'Montserrat', sans-serif;
     font-weight: 600;
     color:#07031a;
@@ -55,7 +55,7 @@ h4 {
 }
 
 .encabezado {
-    flex-basis: 100%;
+    width: 100%;
     text-align: center;
     margin-top: 1.25vw;
 }
@@ -76,6 +76,8 @@ h4 {
         background-size: cover;
         padding: 3.75vw;
         text-align: center;
+        display:flex;
+        flex-flow: column nowrap;
         
     }
         .menu {
@@ -138,38 +140,31 @@ h4 {
 /*QUIENES SOMOS*/
 
     .quienes-somos {
-        display:flex; 
-        flex-flow: row nowrap;
-        padding: 1.25vh 1.25vw; 
+        display: flex;
+        flex-flow: row wrap;
         justify-content: center;
-        flex: 1 1 auto;
-       
+        align-content: center;
+        flex: 1 1 auto;   
     }
-        .quienes-somos-img {
-            width: auto;
-        }
-       
         .quienes-somos-caja {
-            display:flex;
-            flex-flow: row wrap;
-            align-content: space-between;
+            display: flex;
+            flex-flow: row nowrap;
         }
-
+       .quienes-somos-img {
+            flex: 1 1 auto; 
+       }
         .quienes-somos-texto{
         display:flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-content: space-between;
-        
+        flex: 1 1 auto; 
         }
 
         .text {
-            flex-basis: 50%;
-            font-size: 1.5vw;
-            line-height:2.8vw; 
+            font-size: 1.2vw;
+            line-height:2.3vw; 
             font-weight: 300;
             margin-top: 1.25vh;
-            
+            flex: 1 1 auto;  
         }
 
         .servicios{
@@ -178,7 +173,7 @@ h4 {
             justify-content: space-between;
             align-items: center;
             padding: 1.25vh 1.25vw 0vh 1.25vw; 
-            
+            flex: 1 1 auto; 
         }
 
 /*texto en imagen-servicios*/
@@ -196,8 +191,7 @@ h4 {
             width: 100%; 
             padding: 1.25vw;
             text-align: center;
-            font-size: 1vw;
-            
+            font-size: 1vw;    
         }
     
 /*MAIN:PROYECTOS*/
