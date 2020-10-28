@@ -57,7 +57,7 @@ h4 {
 .encabezado {
     flex-basis: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 
@@ -72,12 +72,10 @@ h4 {
     .header {
         background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/home.jpg");
         background-position: center;
-        background-attachment: contain;
+        background-repeat: no-repeat;
         background-size: cover;
         padding: 3.75rem;
         text-align: center;
-        width: 100%;
-        min-height: 100%;
         
     }
         .menu {
@@ -114,76 +112,38 @@ h4 {
             ul {
                 list-style-type: none;
             }
-
-           /* ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-            
-                 /*li {
-                    float: left;
-                   text-transform: uppercase;
-                    font-weight: 300;
-                }
-            */
-
-          /*  .nav a:link,
-            .nav a:visited {
-
-                 float: left;
-                color:#fbd46d;
-                text-align: center;
-                padding: 1rem 1rem;
-                text-decoration: none;
-               font-size: 1.1rem;
-                list-style: none;   
-            }*/
                 
           
-        
 /*home-hero*/
         .home-hero {
             display:flex;
-            flex-flow:column wrap;
-            height: 80vh;
-            justify-content: center;
-
-           /* align-items: center;
-           justify-content: center;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: stretch;
-            align-content: flex-end;*/
-            
+            flex-direction:row;
+            justify-content: flex-start;
+            align-content: center;
+            flex: 1 1 auto; 
+            min-height: 80vh;          
         } 
         
             .hero-text {
                 text-align: left;
                 color: #f4f6ff;
                 margin-left: 2rem;
-               /* display: flex;
-                flex-flow: column wrap;
-                align-items: center;
-                /*border: 1px solid #f4f6ff;*/
-                /*background:#07031a;
-                opacity: 0.7;*/
+                flex: 1 1 auto;
+                align-self: center;
             }
 
 /*QUIENES SOMOS*/
 
     .quienes-somos {
-       /* background: #f4f6ff;*/
         display:flex; 
         flex-flow: row nowrap;
         padding: 1.25rem; 
         justify-content: center;
-        width: 100%;
-        min-height: 100%;
+        flex: 1 1 auto;
+       
     }
         .quienes-somos-img {
-            min-width: 650px;
+            width: auto;
         }
        
         .quienes-somos-caja {
@@ -197,6 +157,7 @@ h4 {
         flex-flow: row wrap;
         justify-content: center;
         align-content: space-between;
+        
         }
 
         .text {
@@ -205,6 +166,7 @@ h4 {
             line-height:2.8rem; 
             font-weight: 300;
             margin-top: 1.25rem;
+            
         }
 
         .servicios{
@@ -213,12 +175,14 @@ h4 {
             justify-content: space-between;
             align-items: center;
             padding: 1.25rem 1.25rem 0rem 1.25rem; 
+            
         }
 
 /*texto en imagen-servicios*/
         .servicio {
             position: relative;  
             margin: 0px 5px 0px 0px;
+            
         }
           
            .txt-servicio {
@@ -230,19 +194,17 @@ h4 {
             padding: 1.25rem;
             text-align: center;
             font-size: 1rem;
+            
         }
     
 /*MAIN:PROYECTOS*/
 
     .main {
-       /* background: #f4f6ff;*/
         display: flex;
         flex-flow: row wrap;
-        width: 100%;
-        min-height: 100%;
         justify-content: center;
         align-content: center;
-        
+        flex: 1 1 auto;  
     }
     
        
@@ -252,6 +214,7 @@ h4 {
         padding: 3rem;
         justify-content: center;
         align-content: center;
+        flex: 1 1 auto;
     }
 
    
@@ -278,6 +241,7 @@ h4 {
 .proyecto {
     position: relative;
     width: 50%;
+    flex: 1 1 auto;
 }
 
 .nombre {
@@ -285,6 +249,7 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    flex: 1 1 auto;
 }
 .overlay {
     position: absolute;
@@ -300,6 +265,7 @@ h4 {
     font-size: 1.25rem;
     padding: 1.25rem;
     text-align: center;
+    flex: 1 1 auto;
 }
 
   
@@ -310,13 +276,11 @@ h4 {
 /*DESTACADOS*/  
 
     .destacados {
-       /* background: #f4f6ff;*/
         background-attachment: contain;
         display:flex;
         flex-flow: row wrap;
         justify-content: center;
-        width: 100%;
-        min-height: 100%;
+        flex: 1 1 auto;
        
        
     }
@@ -326,8 +290,9 @@ h4 {
             justify-content: space-between;
             padding: 1.25rem; 
             margin: 1.25rem;
-            flex: 1 1 auto;
             margin-bottom: 3.5rem;
+            flex: 1 1 auto;
+
         }
 /*tienda online*/
 
@@ -339,9 +304,11 @@ h4 {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
+            flex: 1 1 auto;
         }
         .tarjeta img{
             margin-top:0.5rem;
+            flex: 1 1 auto;
         }
             
         .tarjeta-texto {
@@ -356,6 +323,7 @@ h4 {
             text-align: center;
             width: 70%;
             margin: 1rem;
+            flex: 1 1 auto;
             
         }
 
@@ -367,6 +335,7 @@ h4 {
             text-align: center;
             margin-top: 1rem;
             margin-bottom: 1rem;
+            flex: 1 1 auto;
         }
 
         .tarjeta button {
@@ -380,6 +349,7 @@ h4 {
             width: 100%;
             font-size: 1.25rem;
             margin-bottom: 1rem;
+            flex: 1 1 auto;
             
         }
   
@@ -403,8 +373,7 @@ h4 {
         align-items:center;
         padding-right: 2rem;
         padding-left:2rem;
-        width: 100%;
-        min-height: auto;
+        flex: 1 1 auto;
        
     }
         .rrss {
@@ -412,10 +381,12 @@ h4 {
             flex-flow: row nowrap;
             justify-content: space-evenly;
             align-items: center;
+           
             
         }
             .logo-rrss {
                 margin: 0.5rem;
+                
             }
             .logo-rrss:hover {
                 transform: scale(1.1);
@@ -431,6 +402,7 @@ h4 {
             align-items: flex-start;
             line-height: 1.30rem;
             font-weight: 500;
+            flex: 1 1 auto;
         }
             
            
@@ -451,6 +423,7 @@ h4 {
                 flex-flow: row nowrap; 
                 justify-content: center;  
                 align-items: center;
+                
             }
                 .contacto .ubicacion:hover {
                     color: #fbd46d;
@@ -459,7 +432,8 @@ h4 {
                 display:flex;
                 flex-flow: row nowrap; 
                 justify-content: center; 
-                align-items: center;  
+                align-items: center; 
+                
             }
                 .contacto .mail:hover {
                     color: #fbd46d;
@@ -473,6 +447,7 @@ h4 {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
+            flex: 1 1 auto;
             
         }
             .legal a:link, a:visited {
@@ -487,50 +462,3 @@ h4 {
             }
 
 /* Media queries moviles*/
-  
-@media only screen and (max-width: 850px){
-    .menu {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .nav ul{
-        flex-flow: column wrap;
-        justify-content: center;
-       
-    }
-
-    .quienes-somos-caja {
-        flex-flow: column wrap;
-        display: 100%;
-
-    }
-    .text {
-        display:50%;
-        align-self: left;
-    }
-    .servicios {
-        flex-flow: column wrap;
-        align-self: right;
-        display: 50%;
-    }
-
-    .quienes-somos-img {
-        display:none;
-    }
-
-    
-
-    .proyecto {
-        display:50%;
-    }
-
-    .tarjeta {
-        display:100%;
-    }
-
-    .footer {
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
