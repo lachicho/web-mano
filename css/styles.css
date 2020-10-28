@@ -55,7 +55,7 @@ h4 {
 }
 
 .encabezado {
-    width: 100%;
+    flex: 1 1 100%;
     text-align: center;
     margin-top: 1.25vw;
 }
@@ -142,38 +142,40 @@ h4 {
     .quienes-somos {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
         flex: 1 1 auto;   
     }
         .quienes-somos-caja {
             display: flex;
             flex-flow: row nowrap;
+            padding: 2vh 2vw 2vh 2vw; 
+            justify-content: space-between;
+            align-content: center;
         }
        .quienes-somos-img {
-            flex: 1 1 auto; 
+        flex: 1 1 100%;
        }
         .quienes-somos-texto{
         display:flex;
         flex-flow: row wrap;
-        flex: 1 1 auto; 
+        justify-content: center;
         }
 
         .text {
+            
             font-size: 1.2vw;
             line-height:2.3vw; 
             font-weight: 300;
             margin-top: 1.25vh;
-            flex: 1 1 auto;  
+        
         }
 
         .servicios{
             display:flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             padding: 1.25vh 1.25vw 0vh 1.25vw; 
-            flex: 1 1 auto; 
+           
         }
 
 /*texto en imagen-servicios*/
